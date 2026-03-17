@@ -10,9 +10,9 @@
 <link rel="canonical" href="https://sandeepacspareparts.in/">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Sandeep AC – Repair, Gas Refill &amp; Spare Parts in Sector 149 Noida">
-<meta property="og:description" content="AC gas refill, repair, installation, deep cleaning, AMC &amp; genuine spare parts. Serving Sector 149, 150, Knowledge Park, Pari Chowk &amp; Greater Noida. Open 9AM–9PM all days.">
-<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepYj2yoULegYNU9Ev0sARcrIgncQY4ji8Exzol3d9WEq-DTo9DJC2AtvmY81GgpeBu09LE5BtnqPMWMBkUSBaiwHDJp6jKp6vyhWqFH7NI_WFM5GinN33F3Ddr2NcE3LyKilQhV3syKEkJW">
+<meta property="og:title" content="Sandeep AC – Professional AC Repair, Gas Refill & Spare Parts Noida">
+<meta property="og:description" content="Premium AC services and genuine spare parts in Sector 149 Noida. Serving Sector 150, 148, ATS Pristine & Greater Noida. Same-day service. Open 9AM–9PM.">
+<meta property="og:image" content="images/og-image.png">
 <meta property="og:url" content="https://sandeepacspareparts.in/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -114,31 +114,32 @@
    TOKENS & RESET
 ═══════════════════════════════════════ */
 :root {
-  --navy:#0b1f3a;
-  --navy-light:#0f2a50;
-  --navy-dark:#060f1e;
+  --navy:#2563eb;
+  --navy-light:#3b82f6;
+  --navy-dark:#1d4ed8;
   --sky:#0ea5e9;
   --sky-dark:#0284c7;
-  --ice:#e0f2fe;
-  --orange:#ff6b00;
-  --orange-light:#ff8c38;
-  --green:#16a34a;
-  --green-light:#22c55e;
+  --ice:#f0f9ff;
+  --orange:#ef4444;
+  --orange-light:#f87171;
+  --green:#22c55e;
+  --green-light:#4ade80;
   --amber:#f59e0b;
   --white:#ffffff;
   --off:#f8fafc;
   --muted:#64748b;
   --border:#e2e8f0;
   --text:#1e293b;
-  --radius:14px;
-  --radius-sm:8px;
-  --shadow:0 4px 24px rgba(11,31,58,0.12);
-  --shadow-lg:0 12px 48px rgba(11,31,58,0.18);
+  --radius:20px;
+  --radius-sm:12px;
+  --shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;font-size:16px;}
 body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
+p, .service-desc, .faq-a, .about-text { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 img{max-width:100%;height:auto;display:block;}
 a{text-decoration:none;color:inherit;}
 button{font-family:inherit;cursor:pointer;border:none;background:none;}
@@ -215,8 +216,8 @@ h2.section-title.white{color:var(--white);}
   border-radius:10px;display:flex;align-items:center;justify-content:center;
   font-size:1.2rem;flex-shrink:0;
 }
-.nav-logo-text{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:var(--white);line-height:1.1;}
-.nav-logo-text span{display:block;font-size:0.6rem;font-weight:400;color:var(--sky);letter-spacing:0.15em;text-transform:uppercase;}
+.nav-logo-text{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:var(--white);line-height:1.1;}
+.nav-logo-text span{display:block;font-size:0.65rem;font-weight:400;color:rgba(255,255,255,0.7);letter-spacing:0.12em;text-transform:uppercase;}
 .nav-links{display:flex;align-items:center;gap:32px;}
 .nav-links a{font-size:0.9rem;font-weight:500;color:rgba(255,255,255,0.8);transition:color 0.2s;position:relative;}
 .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--sky);border-radius:1px;transition:width 0.3s;}
@@ -256,9 +257,8 @@ h2.section-title.white{color:var(--white);}
 .hero-bg{
   position:absolute;inset:0;
   background:
-    radial-gradient(ellipse 80% 60% at 70% 50%, rgba(14,165,233,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(255,107,0,0.08) 0%, transparent 50%),
-    linear-gradient(160deg, var(--navy-dark) 0%, #0c1f35 50%, var(--navy-dark) 100%);
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('images/hero-banner.png') center/cover no-repeat;
 }
 .hero-grid{
   position:absolute;inset:0;
@@ -361,26 +361,16 @@ h1.hero-title .highlight{
 .brands-strip{padding:36px 0;}
 .brands-label{text-align:center;font-size:0.8rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:28px;}
 .brands-grid{
-  display:flex;align-items:center;justify-content:center;
-  gap:8px;flex-wrap:wrap;
+  display:flex;align-items:center;justify-content:space-around;
+  gap:40px;flex-wrap:wrap;
+  padding:20px 0;
 }
-.brand-pill{
-  display:flex;align-items:center;gap:6px;
-  padding:10px 20px;
-  border:1.5px solid var(--border);
-  border-radius:50px;
-  font-size:0.85rem;font-weight:700;
-  color:var(--navy);
-  transition:all 0.2s;
-  background:var(--white);
-  letter-spacing:0.03em;
+.brand-item{
+  font-family:'Syne',sans-serif;font-weight:800;font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color:var(--muted);opacity:0.4;transition:all 0.3s;
+  cursor:default;user-select:none;
 }
-.brand-pill:hover{
-  border-color:var(--sky);color:var(--sky-dark);
-  background:var(--ice);transform:translateY(-2px);
-  box-shadow:0 4px 16px rgba(14,165,233,0.15);
-}
-.brand-dot{width:8px;height:8px;border-radius:50%;background:var(--sky);flex-shrink:0;}
+.brand-item:hover{opacity:1;color:var(--navy);transform:scale(1.05);}
 
 /* ═══════════════════════════════════════
    REVIEWS (TRUST BUILDER)
@@ -881,31 +871,33 @@ footer{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,0.06);}
 /* SERVICE CARDS */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
 .service-card{
-  background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius);
-  padding:28px 24px;transition:all 0.3s ease;position:relative;overflow:hidden;
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  padding:20px;transition:all 0.3s ease;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
 }
-.service-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--orange),var(--orange-light));
-  transform:scaleX(0);transform-origin:left;transition:transform 0.3s ease;
+.service-img-wrap{
+  width:100%;aspect-ratio:3/2;border-radius:var(--radius-sm);
+  overflow:hidden;margin-bottom:20px;
 }
-.service-card:hover{border-color:var(--orange);box-shadow:0 8px 32px rgba(255,107,0,0.1);transform:translateY(-4px);}
-.service-card:hover::before{transform:scaleX(1);}
+.service-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;}
+.service-card:hover .service-img-wrap img{transform:scale(1.05);}
+.service-card:hover{border-color:var(--navy);box-shadow:var(--shadow-lg);transform:translateY(-6px);}
 .service-icon-wrap{
-  width:56px;height:56px;background:linear-gradient(135deg,#fff3e6,#ffe4c4);
-  border-radius:14px;display:flex;align-items:center;justify-content:center;
-  font-size:1.6rem;margin-bottom:16px;
+  width:48px;height:48px;background:var(--ice);
+  border-radius:12px;display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;margin-bottom:12px;
 }
-.service-name{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;}
-.service-desc{font-size:0.88rem;color:var(--muted);line-height:1.6;margin-bottom:14px;}
-.service-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
-.service-price{font-size:0.82rem;font-weight:700;color:var(--orange);}
-.service-cta{
-  display:inline-flex;align-items:center;gap:5px;font-size:0.8rem;font-weight:600;
-  color:var(--green);text-decoration:none;padding:5px 12px;border-radius:50px;
-  background:#f0fdf4;border:1px solid #bbf7d0;transition:all 0.2s;
+.service-name{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:700;color:var(--text);margin-bottom:10px;}
+.service-desc{font-size:0.92rem;color:var(--muted);line-height:1.6;margin-bottom:20px;flex-grow:1;}
+.service-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;}
+.service-cta-call{
+  flex:1;text-align:center;padding:12px;background:var(--navy);color:var(--white);
+  border-radius:var(--radius-sm);font-weight:700;font-size:0.85rem;text-decoration:none;
 }
-.service-cta:hover{background:#dcfce7;}
+.service-cta-wa{
+  flex:1;text-align:center;padding:12px;background:var(--green);color:var(--white);
+  border-radius:var(--radius-sm);font-weight:700;font-size:0.85rem;text-decoration:none;
+}
 @media(max-width:768px){.services-grid{grid-template-columns:1fr;}}
 
 /* ═══════════════════════════════════════
@@ -1043,19 +1035,18 @@ footer{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,0.06);}
   <div class="hero-orb hero-orb-2"></div>
   <div class="container">
     <div class="hero-content">
-      <div class="hero-eyebrow">📍 Sector 149, Noida · Open All Days</div>
+      <div class="hero-eyebrow">⚡ Same Day Service Available in Noida</div>
       <h1 class="hero-title">
-        AC Spare Parts<br>
-        Shop in <span class="highlight">Noida</span><br>
-        Genuine Parts Available
+        Expert AC Repair &<br>
+        Spare Parts in <span class="highlight">Noida</span><br>
       </h1>
       <p class="hero-sub">
-        <strong>AC gas refill, repair, installation, deep cleaning</strong> and genuine spare parts in Sector 149 Noida. Serving Sector 150, 148, Knowledge Park, Pari Chowk and all of Greater Noida.
+        Get <strong>AC gas refill, repair, installation, and deep cleaning</strong> with genuine spare parts. Serving Sector 149, 150, 148, ATS Pristine, and Greater Noida. Trusted by 100+ Technicians.
       </p>
       <div class="hero-btns">
         <a href="tel:+919716613961" class="btn btn-primary">📞 Call Now — +91 97166 13961</a>
-        <a href="https://wa.me/919716613961?text=Hi+I+need+AC+spare+parts" target="_blank" class="btn btn-wa">💬 WhatsApp Now</a>
-        <a href="https://www.google.com/maps/place/?q=place_id:ChIJqVyo-WLBDDkRkIankSOzYXg" target="_blank" class="btn btn-outline">📍 Get Directions</a>
+        <a href="https://wa.me/919716613961?text=Hi+Sandeep+AC,+I+need+a+quote+for+AC+service" target="_blank" class="btn btn-wa">💬 Get Instant Quote</a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
       </div>
       <div class="hero-trust">
         <div class="trust-item"><span class="trust-star">⭐</span> 45+ Reviews</div>
@@ -1098,16 +1089,16 @@ footer{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,0.06);}
 <section id="brands">
   <div class="container">
     <div class="brands-strip">
-      <p class="brands-label">Genuine parts available for all major brands</p>
+      <p class="brands-label">Authorized Spare Parts for All Major Brands</p>
       <div class="brands-grid reveal">
-        <div class="brand-pill"><span class="brand-dot"></span>Daikin</div>
-        <div class="brand-pill"><span class="brand-dot"></span>Voltas</div>
-        <div class="brand-pill"><span class="brand-dot"></span>Blue Star</div>
-        <div class="brand-pill"><span class="brand-dot"></span>LG</div>
-        <div class="brand-pill"><span class="brand-dot"></span>Samsung</div>
-        <div class="brand-pill"><span class="brand-dot"></span>Hitachi</div>
-        <div class="brand-pill"><span class="brand-dot"></span>Carrier</div>
-        <div class="brand-pill"><span class="brand-dot"></span>Godrej</div>
+        <div class="brand-item">LG</div>
+        <div class="brand-item">SAMSUNG</div>
+        <div class="brand-item">DAIKIN</div>
+        <div class="brand-item">VOLTAS</div>
+        <div class="brand-item">BLUE STAR</div>
+        <div class="brand-item">HITACHI</div>
+        <div class="brand-item">CARRIER</div>
+        <div class="brand-item">GODREJ</div>
       </div>
     </div>
   </div>
@@ -1160,62 +1151,68 @@ footer{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,0.06);}
       <div class="services-grid">
 
         <div class="service-card reveal reveal-delay-1">
+          <div class="service-img-wrap"><img src="images/ac-gas-refill.png" alt="AC Gas Refill Service" loading="lazy"></div>
           <div class="service-icon-wrap">🧊</div>
           <div class="service-name">AC Gas Refill</div>
-          <div class="service-desc">R22, R32 and R410A refrigerant gas refilling for all AC brands. Correct pressure testing included. Fast same-day service.</div>
+          <p class="service-desc">R22, R32 and R410A refrigerant gas refilling for all brands. Correct pressure testing and leak check included. Fast same-day service.</p>
           <div class="service-meta">
-            <span class="service-price">Starting ₹500</span>
-            <a href="https://wa.me/919716613961?text=Hi+I+need+AC+gas+refill+service" target="_blank" class="service-cta">💬 Book Now</a>
+            <a href="tel:+919716613961" class="service-cta-call">📞 Call Now</a>
+            <a href="https://wa.me/919716613961?text=Hi+Sandeep+AC,+I+need+AC+gas+refill+service.+Please+provide+a+quote." target="_blank" class="service-cta-wa">💬 Get Quote</a>
           </div>
         </div>
 
         <div class="service-card reveal reveal-delay-2">
+          <div class="service-img-wrap"><img src="images/ac-repair.png" alt="Expert AC Repair" loading="lazy"></div>
           <div class="service-icon-wrap">🔧</div>
           <div class="service-name">Expert AC Repair</div>
-          <div class="service-desc">Complete AC fault diagnosis and repair. Cooling issues, noise, water leakage, PCB faults and compressor problems fixed using genuine parts.</div>
+          <p class="service-desc">Complete diagnosis and repair. Cooling issues, noise, water leakage, PCB faults and compressor problems fixed using genuine parts.</p>
           <div class="service-meta">
-            <span class="service-price">Starting ₹300</span>
-            <a href="https://wa.me/919716613961?text=Hi+I+need+AC+repair+service" target="_blank" class="service-cta">💬 Book Now</a>
+            <a href="tel:+919716613961" class="service-cta-call">📞 Call Now</a>
+            <a href="https://wa.me/919716613961?text=Hi+Sandeep+AC,+I+need+AC+repair+service.+Please+provide+a+quote." target="_blank" class="service-cta-wa">💬 Get Quote</a>
           </div>
         </div>
 
         <div class="service-card reveal reveal-delay-3">
+          <div class="service-img-wrap"><img src="images/ac-installation.png" alt="AC Installation Service" loading="lazy"></div>
           <div class="service-icon-wrap">⚙️</div>
           <div class="service-name">AC Installation</div>
-          <div class="service-desc">New AC unit installation for split, window and cassette ACs. Proper copper piping, bracket mounting and electrical connection included.</div>
+          <p class="service-desc">New unit installation for split, window and cassette ACs. Proper copper piping, bracket mounting and electrical connection included.</p>
           <div class="service-meta">
-            <span class="service-price">Starting ₹1,500</span>
-            <a href="https://wa.me/919716613961?text=Hi+I+need+AC+installation+service" target="_blank" class="service-cta">💬 Book Now</a>
+            <a href="tel:+919716613961" class="service-cta-call">📞 Call Now</a>
+            <a href="https://wa.me/919716613961?text=Hi+Sandeep+AC,+I+need+AC+installation+service.+Please+provide+a+quote." target="_blank" class="service-cta-wa">💬 Get Quote</a>
           </div>
         </div>
 
         <div class="service-card reveal reveal-delay-4">
+          <div class="service-img-wrap"><img src="images/ac-deep-cleaning.png" alt="AC Deep Cleaning" loading="lazy"></div>
           <div class="service-icon-wrap">🫧</div>
           <div class="service-name">Deep Cleaning</div>
-          <div class="service-desc">Professional deep cleaning of indoor and outdoor units. High-pressure jet wash, coil cleaning and drain unclogging. Improves cooling efficiency and air quality.</div>
+          <p class="service-desc">Professional deep cleaning with jet wash and coil cleaning. Improves cooling efficiency and air quality. No hidden charges.</p>
           <div class="service-meta">
-            <span class="service-price">Starting ₹500</span>
-            <a href="https://wa.me/919716613961?text=Hi+I+need+AC+deep+cleaning+service" target="_blank" class="service-cta">💬 Book Now</a>
+            <a href="tel:+919716613961" class="service-cta-call">📞 Call Now</a>
+            <a href="https://wa.me/919716613961?text=Hi+Sandeep+AC,+I+need+AC+deep+cleaning+service.+Please+provide+a+quote." target="_blank" class="service-cta-wa">💬 Get Quote</a>
           </div>
         </div>
 
         <div class="service-card reveal reveal-delay-5">
+          <div class="service-img-wrap"><img src="images/hero-banner.png" alt="AC AMC Service" loading="lazy"></div>
           <div class="service-icon-wrap">📋</div>
           <div class="service-name">Maintenance / AMC</div>
-          <div class="service-desc">Annual Maintenance Contract (AMC) and preventive maintenance service. Regular check-ups, gas top-up, filter cleaning and priority repair. Keep your AC running efficiently year-round.</div>
+          <p class="service-desc">Annual Maintenance Contract for peace of mind. Regular check-ups, gas top-up, and priority repair when you need it most.</p>
           <div class="service-meta">
-            <span class="service-price">Call for Price</span>
-            <a href="https://wa.me/919716613961?text=Hi+I+need+AC+AMC+maintenance+details" target="_blank" class="service-cta">💬 Enquire</a>
+            <a href="tel:+919716613961" class="service-cta-call">📞 Call Now</a>
+            <a href="https://wa.me/919716613961?text=Hi+Sandeep+AC,+I+want+to+enquire+about+AC+AMC+service." target="_blank" class="service-cta-wa">💬 Enquire</a>
           </div>
         </div>
 
         <div class="service-card reveal reveal-delay-6">
+          <div class="service-img-wrap"><img src="images/ac-repair.png" alt="Genuine Spare Parts" loading="lazy"></div>
           <div class="service-icon-wrap">✅</div>
           <div class="service-name">Genuine Spare Parts</div>
-          <div class="service-desc">100% genuine compressors, capacitors, PCB boards, fan motors, sensors and all AC components in stock. Same-day availability for all major brands.</div>
+          <p class="service-desc">100% genuine compressors, capacitors, PCB boards, and fan motors in stock. Same-day availability for all major brands.</p>
           <div class="service-meta">
-            <span class="service-price">Best Market Price</span>
-            <a href="https://wa.me/919716613961?text=Hi+I+need+AC+spare+parts" target="_blank" class="service-cta">💬 Check Stock</a>
+            <a href="tel:+919716613961" class="service-cta-call">📞 Call Now</a>
+            <a href="https://wa.me/919716613961?text=Hi+Sandeep+AC,+I+need+genuine+AC+spare+parts.+Please+confirm+stock." target="_blank" class="service-cta-wa">💬 Check Stock</a>
           </div>
         </div>
 
@@ -1482,7 +1479,7 @@ footer{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,0.06);}
         </div>
       </div>
       <div class="about-image-wrap reveal reveal-delay-2">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqjim7In7y_i9gI89Q3BdtMmD_WfHQoy2ZnlQll5t9WI8RLQi8omI8L52O0LiCRDoSBTvij8ND8NZILp3yJSEqeg5Ma31PcHnEYR0XioxWJgGd26pwxZifVNfJrfbqbjwf-8zyQEO-zXrs" alt="Sandeep AC Spare Parts shop interior showing AC spare parts and components in Sector 149 Noida" loading="lazy">
+        <img src="images/about-service.png" alt="Sandeep AC Professional Technician" loading="lazy">
         <div class="about-image-badge">
           <div class="aib-icon">⭐</div>
           <div class="aib-text">
@@ -1677,14 +1674,15 @@ footer{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,0.06);}
         </div>
 
         <div class="enquiry-form reveal reveal-delay-4">
-          <div class="form-title">Quick Enquiry — We will call you back</div>
+          <div class="form-title">⚡ Instant Service Request</div>
+          <p class="section-sub" style="font-size:0.85rem;margin-bottom:12px;color:rgba(255,255,255,0.6)">Enter your details for a 5-minute callback.</p>
           <div class="form-row" style="margin-bottom:10px;">
             <input type="text" class="form-input" placeholder="Your name" id="fname">
             <input type="tel" class="form-input" placeholder="Phone number" id="fphone">
           </div>
           <div class="form-row">
-            <input type="text" class="form-input" placeholder="Service needed (e.g. gas refill, Voltas compressor)" id="fpart">
-            <button class="form-btn" onclick="sendEnquiry()">Send →</button>
+            <input type="text" class="form-input" placeholder="What do you need? (e.g. LG Gas Refill)" id="fpart">
+            <button class="form-btn" onclick="sendEnquiry()">Request Callback →</button>
           </div>
         </div>
       </div>
@@ -1949,7 +1947,7 @@ function sendEnquiry() {
   const phone = document.getElementById('fphone').value.trim();
   const part = document.getElementById('fpart').value.trim();
   if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
-  const msg = encodeURIComponent(`Hi! I am ${name}. My number is ${phone}. I need: ${part || 'AC spare parts'}`);
+  const msg = encodeURIComponent(`Hi! I am ${name}. My phone number is ${phone}. I would like to enquire about: ${part || 'AC service/parts'}. Please call me back with the best quote.`);
   window.open(`https://wa.me/919716613961?text=${msg}`, '_blank');
 }
 

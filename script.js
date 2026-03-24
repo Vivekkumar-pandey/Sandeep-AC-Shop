@@ -194,3 +194,52 @@ document.querySelectorAll('a[href*="maps"]').forEach(a => a.addEventListener('cl
 
 // <!-- Microsoft Clarity: Replace with your Clarity Project ID -->
 // <!-- <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "YOUR_CLARITY_ID");</script> -->
+
+/* ── MODERN CONTACT FORM HANDLER ── */
+function handleFormSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const phone = form.phone.value;
+    
+    // Simple validation (already handled by 'required' but for demonstration)
+    if (!name || !phone) return;
+
+    // Simulate API call / Submission
+    form.classList.add('hidden');
+    const successMsg = document.getElementById('form-success');
+    document.getElementById('success-name').textContent = name;
+    document.getElementById('success-phone').textContent = phone;
+    successMsg.classList.remove('hidden');
+
+    // Also trigger the WhatsApp enquiry for conversion parity
+    const enquiryMsg = encodeURIComponent(`Hi Sandeep AC! My name is ${name}. I need help with my AC. Please contact me at ${phone}.`);
+    // window.open(`https://wa.me/919716613961?text=${enquiryMsg}`, '_blank');
+}
+
+function resetForm() {
+    const form = document.getElementById('contact-form');
+    const successMsg = document.getElementById('form-success');
+    form.reset();
+    successMsg.classList.add('hidden');
+    form.classList.remove('hidden');
+}
+
+/* ── CONTACT V2 HANDLERS ── */
+function handleFormSubmitV2(event) {
+    event.preventDefault();
+    const form = event.target;
+    const name = document.getElementById('v2-name').value;
+    
+    // Animate success
+    const overlay = document.getElementById('v2-success');
+    document.getElementById('v2-success-name').textContent = name;
+    overlay.classList.remove('hidden');
+    overlay.style.animation = 'fadeIn 0.4s ease forwards';
+}
+
+function resetFormV2() {
+    const overlay = document.getElementById('v2-success');
+    overlay.classList.add('hidden');
+    document.getElementById('contact-form-v2').reset();
+}
